@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konular - Forum Java</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Forum Java</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="topics.html" class="active">Konular</a></li>
+                    <li class="auth-links logged-out"><a href="login.html">Giriş Yap</a></li>
+                    <li class="auth-links logged-out"><a href="register.html">Kayıt Ol</a></li>
+                    <li class="auth-links logged-in"><a href="profile.html">Profilim</a></li>
+                    <li class="auth-links logged-in"><a href="#" id="logout-btn">Çıkış Yap</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="topics-container">
+            <div class="container">
+                <div class="topics-header">
+                    <h2>Tüm Konular</h2>
+                    <div class="topics-actions">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Konularda ara...">
+                            <button id="search-btn" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="new-topic.html" class="btn btn-primary logged-in">Yeni Konu</a>
+                    </div>
+                </div>
+                
+                <div class="topics-list" id="topics-list">
+                    <div class="loading">Yükleniyor...</div>
+                </div>
+                
+                <div class="pagination" id="pagination">
+                    <!-- Sayfalama burada oluşturulacak -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Forum Java. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/topics.js"></script>
+</body>
+</html> 

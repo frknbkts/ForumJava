@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Java</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Forum Java</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                    <li><a href="topics.html">Konular</a></li>
+                    <li class="auth-links logged-out"><a href="login.html">Giriş Yap</a></li>
+                    <li class="auth-links logged-out"><a href="register.html">Kayıt Ol</a></li>
+                    <li class="auth-links logged-in"><a href="profile.html">Profilim</a></li>
+                    <li class="auth-links logged-in"><a href="#" id="logout-btn">Çıkış Yap</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Forum Java'ya Hoş Geldiniz</h2>
+                <p>Yazılım dünyasındaki deneyimlerinizi paylaşın, sorular sorun ve topluluğa katılın.</p>
+                <div class="hero-buttons">
+                    <a href="topics.html" class="btn btn-primary">Konuları Görüntüle</a>
+                    <a href="register.html" class="btn btn-secondary logged-out">Hemen Kayıt Ol</a>
+                    <a href="new-topic.html" class="btn btn-secondary logged-in">Yeni Konu Oluştur</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-topics">
+            <div class="container">
+                <h2>Son Konular</h2>
+                <div class="topics-list" id="recent-topics-list">
+                    <div class="loading">Yükleniyor...</div>
+                </div>
+                <div class="view-all">
+                    <a href="topics.html" class="btn btn-outline">Tüm Konuları Görüntüle</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Forum Java. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
