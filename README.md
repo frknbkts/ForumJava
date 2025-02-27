@@ -15,14 +15,6 @@ Bu proje, kullanıcıların kayıt olup giriş yapabildiği, konular açabildiğ
 - **Lombok**: Tekrarlayan kod yazımını azaltmak için
 - **RESTful API**: Frontend ile iletişim için
 
-### Frontend
-
-- **HTML5**: Sayfa yapısı
-- **CSS3**: Stil ve tasarım
-- **JavaScript (ES6+)**: İstemci tarafı programlama
-- **Fetch API**: Backend ile asenkron iletişim
-- **LocalStorage**: Kullanıcı oturum bilgilerini saklamak için
-- **Responsive Design**: Farklı cihazlarda uyumlu görünüm
 
 ## Proje Yapısı
 
@@ -52,23 +44,6 @@ forumjava/
 └── pom.xml                                # Maven yapılandırması
 ```
 
-### Frontend Yapısı
-
-```
-frontend/
-├── css/
-│   └── style.css                          # Ana stil dosyası
-├── js/
-│   ├── auth.js                            # Kimlik doğrulama işlemleri
-│   ├── topic-detail.js                    # Konu detay sayfası işlemleri
-│   ├── topics.js                          # Konular sayfası işlemleri
-│   └── utils.js                           # Yardımcı fonksiyonlar
-├── index.html                             # Ana sayfa
-├── login.html                             # Giriş sayfası
-├── register.html                          # Kayıt sayfası
-├── topics.html                            # Konular sayfası
-└── topic-detail.html                      # Konu detay sayfası
-```
 
 ## API Endpoint'leri
 
@@ -107,11 +82,6 @@ frontend/
 5. Uygulamayı çalıştırın: `./mvnw spring-boot:run`
 6. Backend http://localhost:8080 adresinde çalışacaktır
 
-### Frontend
-
-1. Frontend dosyalarını bir web sunucusunda barındırın (örn. Apache, Nginx)
-2. Veya basit bir HTTP sunucusu kullanın: `npx http-server frontend -p 8081`
-3. Frontend http://localhost:8081 adresinde çalışacaktır
 
 ## Güvenlik Özellikleri
 
